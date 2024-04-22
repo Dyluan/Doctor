@@ -1,4 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Bandeau from './Bandeau';
+import Recherche from './Recherche';
 
+function Accueil() {
+    return (
+        <>
+            <h1>Docteur AnyWhere</h1>
+            <Bandeau />
+            <Recherche />
+        </>
+    )
+}
+
+export default Accueil;

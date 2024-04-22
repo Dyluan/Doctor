@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Bandeau() {
     return (
         <>
-            <p><a href="/">Home</a></p>
-            <p><a href = "/account/login" >Connection</a></p>
+            <p><Link to='/'>Home</Link></p>
+            <p><Link to='/login'>Connection</Link></p>
             <p>FR</p>
         </>
     )
