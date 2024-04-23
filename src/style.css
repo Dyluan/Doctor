@@ -1,0 +1,23 @@
+.top-right-container {
+
+    position: fixed;
+    top: 10px; /* Ajustez la distance du haut selon vos préférences */
+    right: 10px; /* Ajustez la distance de la droite selon vos préférences */
+}
+
+/* Style pour chaque élément */
+.login {
+    display: inline-block;
+    margin-right: 10px; /* Espace entre
+   les éléments */
+}
+
+.language {
+    display: inline-block;
+    margin-right: 10px; /* Espace entre les éléments */
+}
+
+.home {
+    display: inline-block;
+    /* Aucun espace entre les éléments suivants */
+}
