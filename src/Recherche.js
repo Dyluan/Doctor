@@ -1,12 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Recherche() {
+
+    const [nomDocteur, setNomDocteur] = useState('');
+    const [adresse, setAdresse] = useState('');
+
+    const handleClick = (event) => {
+        event.preventDefault();
+        nomDocteur ? console.log(nomDocteur) : console.log(adresse);
+        
+    }
+
     return (
         <>
             <br />
-            <input type="text" placeholder="Médecin généraliste"></input>
-            <input type="text" placeholder="Adresse, région ou ville"></input>
-            <button type="button">Recherche</button>
+            <form onSubmit={handleClick}>
+                <input type="text" placeholder="Médecin généraliste" onChange={(e) => setNomDocteur(e.target.value)}></input>
+                <input type="text" placeholder="Adresse, région ou ville" onChange={(e) => setAdresse(e.target.value)}></input>
+                <button type="submit">Recherche</button>
+            </form>
         </>
     )
 }

@@ -3,6 +3,7 @@ import Bandeau from './Bandeau';
 import Recherche from './Recherche';
 
 function Accueil() {
+
     return (
         <>
             <h1>Docteur AnyWhere</h1>
