@@ -24,7 +24,7 @@ function Login() {
                     <br /> mot de passe <br />
                     <input type="password" onChange={(e) => setPassword(e.target.value)}></input>
                     <br />
-                    <input type="submit" value="Se connecter"></input>
+                    <button type="submit">Se connecter</button>
                 </form>
             </div>
         </>

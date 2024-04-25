@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import Doctor from "./Doctor";
+import Bandeau from "./Bandeau";
+import Recherche from "./Recherche";
 
 function DoctorList() {
 
@@ -7,16 +9,22 @@ function DoctorList() {
 
     return (
         <>
+            <Bandeau />
+            <Recherche />
             <p>Liste de médecins : </p>
-            <select>
+            
+        </>
+    )
+}
+
+export default DoctorList;
+
+/*
+<select>
                 {listOfDoctors.map((elem) => (
                     <option value={elem.nom}>
                         <Doctor prenom={elem.prenom} nom={elem.nom} specialite={elem.specialite} adresse={elem.adresse} />
                     </option>
                 ))}
             </select>
-        </>
-    )
-}
-
-export default DoctorList;
+            */

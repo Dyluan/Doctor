@@ -19,6 +19,7 @@
 }
 
 .home {
+    margin-right: 10px;
     display: inline-block;
     /* Aucun espace entre les éléments suivants */
 }

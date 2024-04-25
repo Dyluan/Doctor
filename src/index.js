@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { Route, Routes, createBrowserRouter, createRoutesFromElements, BrowserRouter } from 'react-router-dom';
 import Accueil from './Accueil';
 import Login from './Login';
+import DoctorList from './DoctorList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Routes>
       <Route path='/' element={<Accueil />}/>
       <Route path='/login' element={<Login />}/>
+      <Route path='/search' element={<DoctorList />}/>
     </Routes>
   </BrowserRouter>
   
